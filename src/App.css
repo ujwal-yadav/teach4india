@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  color: #0EC0E2;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.navbar .nav-logo{
+  display: none;
+}
+.carousel-inner{
+  max-height: 95vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel{
+  z-index: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.writtencontent h1{
+  font-size: 1.4rem;
+  color: #0EC0E2;
+  font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.crisis , .alumni{
+  background-color: #0EC0E2;
+  color: white;
+}
+.fellow{
+  background-image: url("./Images/fellowshipbg.jpg");
+}
+.crisis h1, .alumni h1{
+  background-color: #0EC0E2;
+  color: white;
+}
+.join p{
+  color: #0EC0E2;
+}
+.join .btns button ,.writtencontent .fellow button{
+  color: #0EC0E2;
+  border: 2px solid #0EC0E2;
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.join .btns button ,.writtencontent .crisis button{
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+.join .btns button ,.writtencontent .crisis .lm-btn:hover{
+  color: #0EC0E2;
+  background-color: white;
+}
+.join .btns button{
+  background-color: white;
+  color: #0EC0E2;
+  border: 2px solid #0EC0E2;
+}
+.join .btns button:hover{
+  background-color: #0EC0E2;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.writtencontent .fellow button:hover{
+  background-color: #0EC0E2;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.writtencontent .svg-black {
+  padding:  95px 43vw;
+  padding-top: 0;
+  background-color: #0EC0E2;
+}
+
+.writtencontent .svg-blue-img {
+  padding:95px 43vw;
+  padding-top: 0;
+}
+.writtencontent .svg-blue {
+  padding:95px 43vw;
+  padding-top: 0;
+  transform-origin: 0px 0px;
+  background-color:#1F2937;
+}
+.writtencontent .svg-white {
+  padding:95px 43vw;
+  padding-top: 0;
+  background-color:transparent;
+}
+.footer .title-font{
+  font-size: 0.8rem;
+}
+.modal-bg{
+  height: 100vh;
+  background-color: #1F2937;
+}
+.modal-box{
+  background-color: #1F2937;
+  height: 100vh;
+  width: 90vw;
+  position: absolute;
+  top: 0;
+  left:0;
+  position: fixed;
+  z-index: 1;
+}
+
+.modal-close i{
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+}
+
+
+@media screen and (min-width: 801px) { 
+  .navbar .nav2{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .nav1{
+    display: none;
+  } 
+  .socials{
+    margin-bottom:4rem;
+  }
+  .carousel-inner img{
+    height: 84vh;
+    object-fit: cover;
+  }
+  .navbar .nav2{
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    background-color: #1F2937;
+  }
+  .navbar .nav-logo{
+    display:block;
+  }
+  .navbar a{
+    margin-left: 0;
+  }
+  .navbar .nav2 a{
+    font-size: 1rem;
+  }
+  
+.writtencontent .svg-black {
+  padding:  95px 33vw;
+  padding-top: 0;
+  background-color: #0EC0E2;
+}
+.writtencontent .svg-blue {
+  padding:95px 33vw;
+  padding-top: 0;
+  background-color:#1F2937;
+}
+.writtencontent .svg-white {
+  padding:95px 33vw;
+  padding-top:0;
+  background-color:white;
+}
+.writtencontent .svg-blue-img {
+  padding:95px 33vw;
+  padding-top: 0;
+}
+}
+
+@media screen and (min-width: 260px) {
+  .navbar .nav2 .a{
+    font-size: 1rem;
+    margin:0 0.5rem;
   }
 }
